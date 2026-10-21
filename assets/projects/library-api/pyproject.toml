@@ -1,0 +1,20 @@
+[project]
+name = "library-api"
+version = "0.1.0"
+description = "Backend 文档的图书借阅示例服务"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi==0.115.14",
+    "pydantic==2.14.1",
+    "uvicorn[standard]==0.30.6",
+]
+
+[dependency-groups]
+dev = [
+    "httpx==0.27.2",
+    "pytest==8.4.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
