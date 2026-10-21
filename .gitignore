@@ -1,0 +1,43 @@
+.obsidian/
+
+# AI 相关文件，严禁提交
+CLAUDE.md
+AGENTS.md
+.claude/
+.opencode/
+.cursor/
+.cursorrules
+.github/copilot-instructions.md
+
+# Python 构建与运行产物
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+dist/
+build/
+*.egg-info/
+*.log
+logs/
+
+# 编辑器与系统文件
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# assets/images 只追踪 svg，其余（drawio、备份等）不追踪，也不删除
+**/assets/images/**
+!**/assets/images/**/
+!**/assets/images/**/*.svg
